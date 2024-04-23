@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Clear+Sans&display=swap');
+
+
+body {
+    font-family: 'Clear Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-title {
+    color: green;
+}
+
+.info-box {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.info-title {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+#valor{
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
+
+#nomecompleto{
+    font-weight: bold;
+}
+
+#nascimento{
+    font-weight: bold;
+}
+
+#status{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+#cpf{
+    font-weight: bold;
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.nomes{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.nascimentos{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 8px;
+}
+.seucpf{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 8px;
+  
+}
+.statuse{
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 20px;
+}

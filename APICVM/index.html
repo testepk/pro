@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indenização Disponível</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header com a imagem de banner -->
+    <div class="banner">
+        <img src="./img/header.jpeg" alt="Banner">
+    </div>
+
+    <!-- Título principal -->
+    <h1 class="main-title">Comprovante Disponível</h1>
+
+    <!-- Informações da indenização -->
+    <div class="info-box">
+        <h2 class="info-title">Valor de Indenização:</h2>
+        <span id="valor"></span>
+        <div class="resultados">
+            <p class="codigo">Código: MC3818</p>
+        <p class="nomes">Nome: <span id="nomecompleto"></span></p>
+        <p class="nascimentos">Data de Nascimento: <span id="nascimento"></span></p>
+        <p class="seucpf">CPF: <span id="cpf"></span></p>
+
+        <p class="statuse">Status: <span id="status">Aguardando pagamento da tarifa...</span></p>
+        </div>
+    </div>
+
+    <!-- Script para obter parâmetros da URL e preencher os dados -->
+    <script src="script.js"></script>
+</body>
+</html>
