@@ -132,7 +132,7 @@
         document.addEventListener('DOMContentLoaded', function() {
           const urlParams = new URLSearchParams(window.location.search);
           const audioFile = urlParams.get('audioenter');
-          const audioSrc = audioFile ? './audio/${audioFile}' + '.mp3' : '';
+          const audioSrc = audioFile ? `./audio/${audioFile}` : '';
     
           const player = new Plyr('.plyr', {
             controls: ['play', 'progress', 'current-time', 'duration']
@@ -160,13 +160,13 @@
     
           const audioContainer = document.getElementById('audioContainer');
           audioContainer.addEventListener('click', function() {
-            const playButton = audioContainer.querySelector('.plyr__control');
+            const playButton = audioContainer.querySelector('.plyr__controls button[data-plyr="play"]');
             playButton.click();
           });
     
-          const playPauseButton = document.getElementById('audioContainer').querySelector('.plyr__control');
+          const playPauseButton = document.getElementById('audioContainer').querySelector('.plyr__controls button[data-plyr="play"]');
           playPauseButton.addEventListener('click', function() {
-            const playButton = audioContainer.querySelector('.plyr__control');
+            const playButton = audioContainer.querySelector('.plyr__controls button[data-plyr="play"]');
             playButton.click();
           });
     
