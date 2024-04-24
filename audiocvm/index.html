@@ -127,12 +127,12 @@
         </div>
       </div>
       
-      <script src="./js/plyr.js"></script>
+      <script src="js/plyr.js"></script>
       <script>
         document.addEventListener('DOMContentLoaded', function() {
           const urlParams = new URLSearchParams(window.location.search);
           const audioFile = urlParams.get('audioenter');
-          const audioSrc = audioFile ? `./audio/${audioFile}` : '';
+          const audioSrc = audioFile ? `audio/${audioFile}` : '';
     
           const player = new Plyr('.plyr', {
             controls: ['play', 'progress', 'current-time', 'duration']
